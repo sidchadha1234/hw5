@@ -36,4 +36,13 @@ bool schedule(
     DailySchedule& sched
 );
 
+
+//each column is a worker
+//recurse at top left and go across the rows and then down
+//if you assigned them a max number of shifts, skip to next worker
+//get through all workers without being able to advanced to next row/column
+//recurison stops and then you return false
+//if you recurse to the non existent row, recursion has gone all the way through and you return true
+
+
 #endif
